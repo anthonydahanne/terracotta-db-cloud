@@ -109,6 +109,8 @@ and  don't forget to re enable the proxy :
 
     kubectl proxy
 
+If you have any doubts, go have a look at the [dashboard official documentation](https://github.com/kubernetes/dashboard/wiki/Accessing-Dashboard---1.7.X-and-above)
+
 ### DANGER ZONE !
 Once you're done with your cluster, don't forget to delete all AWS resources :
 
