@@ -126,7 +126,7 @@ Once this is done, you need to pass your credentials to kubectl, and store them 
 
     kubectl create secret docker-registry regcred --docker-server=https://index.docker.io/v1/ --docker-username=<your-name> --docker-password=<your-pword> --docker-email=<your-email>
 
-To make sure minikube can properly pull from Docker Store, you can try and apply this sample yaml file :
+To make sure kops can properly pull from Docker Store, you can try and apply this sample yaml file :
 
     cat > test-pull.yaml <<EOF
     apiVersion: v1
