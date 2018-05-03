@@ -30,6 +30,8 @@ spec:
         configMap:
           name: license
       restartPolicy: OnFailure
+      imagePullSecrets:
+       - name: regcred
 
 ---
 
@@ -69,6 +71,8 @@ spec:
           value: "100"
         - name: ENTRY_VALUES_MEAN_SIZE_KB
           value: "25"
+      imagePullSecrets:
+       - name: regcred
 
 ---
 
@@ -114,6 +118,8 @@ spec:
           value: "50000"
         - name: POUNDING_INTERVAL_MS
           value: "1000"
+      imagePullSecrets:
+       - name: regcred
 
 ---
 
@@ -159,6 +165,8 @@ spec:
         persistentVolumeClaim:
           claimName: tmcdata
       restartPolicy: Always
+      imagePullSecrets:
+       - name: regcred
 
 ---
 
@@ -265,6 +273,8 @@ spec:
 #        - name: backups
 #          persistentVolumeClaim:
 #            claimName: backups-volume-claim
+      imagePullSecrets:
+       - name: regcred
 
 ---
 
@@ -355,6 +365,8 @@ spec:
 #        - name: backups
 #          persistentVolumeClaim:
 #            claimName: backups-volume-claim
+      imagePullSecrets:
+       - name: regcred
 
 ---
 
@@ -445,6 +457,8 @@ spec:
 #        - name: backups
 #          persistentVolumeClaim:
 #            claimName: backups-volume-claim
+      imagePullSecrets:
+       - name: regcred
 
 ---
 
@@ -535,3 +549,5 @@ spec:
 #        - name: backups
 #          persistentVolumeClaim:
 #            claimName: backups-volume-claim
+      imagePullSecrets:
+       - name: regcred
