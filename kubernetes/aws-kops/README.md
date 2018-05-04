@@ -101,7 +101,7 @@ A nice tool is the dashboard, it's easy to set up :
 
 And then open this url : http://localhost:8001/ui
 
-If you're asked to login, simply get a token from kops :
+If you're asked to login, you can either skip or simply get a token from kops : (depends on your version of kops)
 
     kops get secrets --type secret admin -oplaintext
 
