@@ -2,6 +2,14 @@
 
 -------------------------------------------------------------------------------
 
+Once all the services are up and running (may take few minutes), you'll be able to connect to the Terracotta Management Console (TMC) at :
+
+http://{{ .Release.Name }}-tmc.{{ .Release.Namespace }}.svc.cluster.local
+
+or, on your local machine :
+
+kubectl --namespace={{ .Release.Namespace }} port-forward service/{{ .Release.Name }}-tmc 9480
+
 To access your Terracotta cluster from within the Kubernetes cluster:
 
 Configure your Ehcache3 or TC Store client with the following Terracotta URL : terracotta://{{ template "terracotta.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local
